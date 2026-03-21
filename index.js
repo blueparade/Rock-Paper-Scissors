@@ -10,9 +10,6 @@ function getComputerChoice () {
     }
 }
 
-
-
-
 function getHumanChoice () {
     let sign = window.prompt("Insert Choice");
 
@@ -25,3 +22,5 @@ function getHumanChoice () {
     }
 }
 
+const humanScore = 0;
+const computerScore = 0;
