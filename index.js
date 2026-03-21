@@ -22,8 +22,8 @@ function getHumanChoice() {
     }
 }
 
-const humanScore = 0;
-const computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 function playRound () {
     let humanChoice = getHumanChoice().toLowerCase();
