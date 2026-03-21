@@ -2,32 +2,25 @@ function getComputerChoice() {
     let result = Math.floor(Math.random() * 3 + 1);
 
    if (result === 1) {
-        return("Rock");
+        return("rock");
     } else if (result === 2) {
-        return("Paper");
+        return("paper");
     } else if (result === 3) {
-        return("Scissors");
+        return("scissors");
     }
 }
 
 function getHumanChoice() {
-    let sign = window.prompt("Insert Choice (Rock, Paper, Scissors)");
-
-    if (sign === "Rock") {
-        return("Rock");
-    } else if (sign === "Paper") {
-        return("Paper");
-    } else if (sign === "Scissors") {
-        return("Scissors");
-    }
+    let sign = window.prompt("Insert Choice (Rock, Paper, Scissors)").toLowerCase();
+    return sign;
 }
 
 let humanScore = 0;
 let computerScore = 0;
 
 function playRound () {
-    let humanChoice = getHumanChoice().toLowerCase();
-    let computerChoice = getComputerChoice().toLowerCase();
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
 
     if (humanChoice === "rock" && computerChoice === "rock") {
         console.log("Draw!");
