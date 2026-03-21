@@ -25,9 +25,9 @@ function getHumanChoice() {
 const humanScore = 0;
 const computerScore = 0;
 
-function playRound (humanChoice, computerChoice) {
-    humanChoice = getHumanChoice().toLowerCase();
-    computerChoice = getComputerChoice().toLowerCase();
+function playRound () {
+    let humanChoice = getHumanChoice().toLowerCase();
+    let computerChoice = getComputerChoice().toLowerCase();
 
     if (humanChoice === "rock" && computerChoice === "rock") {
         console.log("Draw!");
