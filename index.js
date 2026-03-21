@@ -55,3 +55,17 @@ function playRound () {
         humanScore++;
     }
 }
+
+function playGame() {
+    for (let i = 1; i <= 5; i++) {
+        console.log(playRound());
+    }
+
+    if (humanScore > computerScore) {
+        alert("You win!");
+    } else if (humanScore < computerScore) {
+        alert("You lose!")
+    }
+}
+
+console.log(playGame())
